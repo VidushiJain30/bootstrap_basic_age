@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<style type="text/css">
+		body{
+			margin-top:70px;
+			background: #333;
+			color:#fff;
+		}
+	</style>
+	<title>birthyear</title>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+				<h1 class="display-5 text-center mb-3">Birth-Year</h1>
+				<form>
+					<div class="form-group"><input id="ageinput"
+						type="number" class="form-control"form-control-lg" placeholder="Enter age">
+					</div>
+				</form> 
+				<div id="output">
+					<div class="card text-white bg-secondary mb-3" style="max-width: 18rem;">
+						<div class="card-block">
+							<h5>Birth-Year:</h5>
+							<div id="birth"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		document.getElementById('ageinput').addEventListener('input',function(e){
+			let year=e.target.value;
+			document.getElementById('birth').innerHTML=2018-year;
+		});
+	</script>
+</body>
+</html>
